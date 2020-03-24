@@ -3,7 +3,7 @@ VestaCP's template forcing HTTPS on VestaCP &amp; Nginx &amp; PHP-FPM stack
 
 ---
 
-This template is modification of default Vesta's template:
+This template is modification of default Vesta's templates:
 ```sh
 /usr/local/vesta/data/templates/web/nginx/php-fpm/default.tpl
 /usr/local/vesta/data/templates/web/nginx/php-fpm/default.stpl
@@ -25,6 +25,6 @@ or
 ```sh
 cd /usr/local/vesta/data/templates/web/nginx/php-fpm
 git clone git@github.com:lookasc/vesta-cp-nginx-force-https.git
-cp ./vesta-cp-nginx-force-https/force-https* ./
+cp ./vesta-cp-nginx-force-https/force-https.* ./
 rm -r ./vesta-cp-nginx-force-https
 ```
