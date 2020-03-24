@@ -8,12 +8,12 @@ server {
   error_log   /var/log/nginx/domains/%domain%.error.log error;
 
   location / {
-		
+
 		if ($scheme = http) {
       return 301 https://$server_name$request_uri;
     }
 
-	  location ~* ^.+\.(jpeg|jpg|png|gif|bmp|ico|svg|css|js)$ {
+		location ~* ^.+\.(jpeg|jpg|png|gif|bmp|ico|svg|css|js)$ {
       expires     max;
     }
 
@@ -46,7 +46,7 @@ server {
     alias   %home%/%user%/web/%domain%/stats/;
     include %home%/%user%/conf/web/%domain%.auth*;
   }
-
+	
 	include     /etc/nginx/conf.d/phpmyadmin.inc*;
   include     /etc/nginx/conf.d/phppgadmin.inc*;
   include     /etc/nginx/conf.d/webmail.inc*;
