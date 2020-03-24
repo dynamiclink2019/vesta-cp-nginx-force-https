@@ -1,6 +1,6 @@
 # vesta-cp-nginx-force-https
 VestaCP's template forcing HTTPS on VestaCP &amp; Nginx &amp; PHP-FPM stack
-
+Tested on Ubuntu 18.04.2 LTS
 ---
 
 This template is modification of default Vesta's templates:
@@ -24,7 +24,8 @@ or
 
 ```sh
 cd /usr/local/vesta/data/templates/web/nginx/php-fpm
-git clone git@github.com:lookasc/vesta-cp-nginx-force-https.git
-cp ./vesta-cp-nginx-force-https/force-https.* ./
-rm -r ./vesta-cp-nginx-force-https
+wget -O vesta-cp-nginx-force-https-master.zip https://github.com/lookasc/vesta-cp-nginx-force-https/archive/master.zip
+unzip vesta-cp-nginx-force-https-master.zip
+cp ./vesta-cp-nginx-force-https-master/force-https.* ./
+rm -r ./vesta-cp-nginx-force-https-master*
 ```
