@@ -12,7 +12,7 @@ server {
 
   location / {
 
-		location ~* ^.+\.(jpeg|jpg|png|gif|bmp|ico|svg|css|js)$ {
+    location ~* ^.+\.(jpeg|jpg|png|gif|bmp|ico|svg|css|js)$ {
       expires     max;
     }
 
@@ -33,7 +33,7 @@ server {
   error_page  500 502 503 504 /error/50x.html;
 
   location /error/ {
-		alias   %home%/%user%/web/%domain%/document_errors/;
+    alias   %home%/%user%/web/%domain%/document_errors/;
   }
 
   location ~* "/\.(htaccess|htpasswd)$" {
