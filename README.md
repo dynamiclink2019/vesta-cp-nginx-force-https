@@ -1,8 +1,8 @@
 # vesta-cp-nginx-force-https
 VestaCP's template forcing HTTPS on VestaCP &amp; Nginx &amp; PHP-FPM stack
-Tested on Ubuntu 18.04.2 LTS
----
 
+---
+Tested on Ubuntu 18.04.2 LTS.
 This template is modification of default Vesta's templates:
 ```sh
 /usr/local/vesta/data/templates/web/nginx/php-fpm/default.tpl
